@@ -1,0 +1,13 @@
+Position의 기본 값은 static이다.
+
+앱솔루트를 쓰려면 부모에 렐러티브를 지정해줘야 한다.
+
+sticky는 부모의 위치에 따른 고정 스티키는 top이나 left 같은 프로퍼티 값을 지정해줘야 함
+
+fixed는 뷰포트를 기준으로 위치를 고정 
+
+background-image
+background-repeat
+background-position
+background-size
+
