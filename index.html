@@ -15,16 +15,17 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav id="nav-bar">
+    <nav id="navbar">
       <div class="navbar__logo">
         <i class="fab fa-diaspora"></i>
         <a href="#">wisehero</a>
       </div>
       <div class="navbar__menu">
         <ul class="navbar__menu">
-          <li class="navbar__menu__item">Home</li>
+          <li class="navbar__menu__item active">Home</li>
           <li class="navbar__menu__item">My work</li>
           <li class="navbar__menu__item">Skills</li>
           <li class="navbar__menu__item">testimonials</li>
@@ -48,7 +49,7 @@
       </h4>
       <button class="home__contact">Contact me</button>
     </section>
-    <section id="about">
+    <section id="about" class="section section__container">
       <h1>About me</h1>
       <p>
         국민대학교 경영정보전공 재학 중에 있으며 교내의 융합전공 제도에 흥미를
@@ -60,30 +61,38 @@
       <div class="about__majors">
         <div class="major">
           <div class="major__icon"><i class="fab fa-html5"></i></div>
-          <div class="major__title">Front-ends</div>
-          <div class="major__description"></div>
-        </div>
-        <div class="major">
-          <div class="major__icon"><i class="fab fa-html5"></i></div>
-          <div class="major__title">Front-ends</div>
-          <div class="major__description"></div>
-        </div>
-        <div class="major">
-          <div class="major__icon"><i class="fab fa-html5"></i></div>
-          <div class="major__title">Front-ends</div>
-          <div class="major__description"></div>
-        </div>
-        <div class="about__jobs">
-          <div class="job">
-            <div class="job__logo"></div>
-            <p class="job__name"></p>
-            <p class="job__period"></p>
+          <h2 class="major__title">Front-ends</h2>
+          <div class="major__description">
+            HTML5, CSS3, Javascript, React, Web API
           </div>
-          <div class="job"></div>
+        </div>
+        <div class="major">
+          <div class="major__icon"><i class="fab fa-java"></i></div>
+          <h2 class="major__title">Back-ends</h2>
+          <div class="major__description">
+            Java, Python, Node JS, MySQL, Spring
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon"><i class="fas fa-dollar-sign"></i></div>
+          <h2 class="major__title">Business</h2>
+          <div class="major__description">Accounting, SCM, ERP, CRM, BA</div>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img src="/imgs/allwayslogo.png" alt="" />
+          <div class="job__description">
+            <p class="job__name">
+              Cheif of General affairs department of 36th Council of MIS at
+              Kookmin University
+            </p>
+            <p class="job__period">2019 04.04 - 2019 11.30</p>
+          </div>
         </div>
       </div>
     </section>
-    <section id="skills">
+    <section id="skills" class="section">
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
       <p>
@@ -102,49 +111,49 @@
               <span>99%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value"></div>
+              <div class="skill__value" style="width: 99%"></div>
             </div>
           </div>
           <div class="skill">
             <div class="skill__description">
               <span>CSS</span>
-              <span>99%</span>
+              <span>60%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value"></div>
+              <div class="skill__value" style="width: 60%"></div>
             </div>
           </div>
           <div class="skill">
             <div class="skill__description">
               <span>Javascript</span>
-              <span>99%</span>
+              <span>50%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value"></div>
+              <div class="skill__value" style="width: 50%"></div>
             </div>
           </div>
           <div class="skill">
             <div class="skill__description">
               <span>Java</span>
-              <span>99%</span>
+              <span>60%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value"></div>
+              <div class="skill__value" style="width: 60%"></div>
             </div>
           </div>
           <div class="skill">
             <div class="skill__description">
               <span>SQL</span>
-              <span>99%</span>
+              <span>50%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value"></div>
+              <div class="skill__value" style="width: 50%"></div>
             </div>
           </div>
         </div>
         <div class="skillset__right">
           <div class="tools">
-            <div class="skillset__title">Tools</div>
+            <h3 class="skillset__title">Tools</h3>
             <ul class="tools__list">
               <li>
                 <span>Visual Studio Code</span>
@@ -159,10 +168,10 @@
             <h3 class="skillset__title">Etc</h3>
             <ul class="etc__list">
               <li>
-                <spna>Git</spna>
-                <span>ERP</span>
-                <span>SCM</span>
-                <span>CRM</span>
+                <div>Git</div>
+                <div>ERP</div>
+                <div>SCM</div>
+                <div>CRM</div>
               </li>
             </ul>
           </div>
