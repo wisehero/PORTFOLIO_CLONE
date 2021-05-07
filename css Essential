@@ -11,3 +11,10 @@ background-repeat
 background-position
 background-size
 
+:root{
+    var 선언
+}
+
+Data Attribute?
+
+- 
